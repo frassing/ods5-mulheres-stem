@@ -1,0 +1,200 @@
+@media screen and (max-width: 37.5em) {
+	.nav-list {
+		justify-content: space-evenly;
+	}
+	
+	.nav-list li {
+		padding: .5rem .2rem;
+		font-size: .6rem;
+	}
+
+	.hero_title {
+		font-size: 1.8em;
+	}
+
+	.hero_subtitle {
+		font-size: 1em;
+	}
+
+	.mulheres-stem_gallery, 
+	.colunas {
+		gap: 1rem;
+	}
+
+	.coluna,
+	.cards-container {
+		width: 100%;
+	}
+
+	.content-actions {
+		flex-direction: row;
+		font-size: .6em;
+		flex-wrap: nowrap;
+	}
+
+	.article, .section {
+		padding-bottom: 1.5em;
+	}
+	
+	.article_title, .section_title {
+		font-size: 1em;
+		margin-bottom: 1em;
+	}
+
+	.article_subtitle {
+		font-size: .8em;
+		margin-bottom: 1em;
+	}
+
+	.content_text,
+	.form-inscreva-se {
+		font-size: .8em;
+	}
+
+	.mulheres-stem_details {
+		font-size: .9em;
+	}
+
+	.mulheres-stem_img {
+		width: 45%;
+	}
+
+	.form-inscreva-se {
+		padding: 0 .5rem;
+	}
+
+	.stem_img,
+	.form_img {
+		max-width: 40%;
+	}
+
+	.autora_img {
+		max-width: 28%;
+	}
+
+	.footer {
+		font-size: .7em;
+	}
+
+	.footer_creditos-list,
+	.footer_copyright {
+		display: block;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 37.5em) and (max-width: 43.75em) {
+	.nav-list li {
+		padding: .8rem .3rem;
+	}
+	
+	.hero_title {
+		font-size: 2em;
+	}
+
+	.hero_subtitle {
+		font-size: 1.2em;
+	}
+	
+	.article_title,
+	.section_title {
+		font-size: 1.2em;
+	}
+
+	.article_subtitle {
+		padding: 0 2rem;
+	}
+
+	.colunas-md {
+		flex-direction: column;
+	}
+	
+	.coluna-md,
+	.cards-container {
+		width: 80%;
+	}
+
+	.content_text,
+	.form-inscreva-se {
+		font-size: .8em;
+	}
+
+	.form-inscreva-se {
+		width: 45%;
+		padding: 0;
+	}
+
+	.mulheres-stem_img {
+		width: 30%;
+	}
+
+	.stem_img,
+	.form_img {
+		max-width: 35%;
+	}
+
+	.autora_img {
+		max-width: 28%;
+	}
+	
+	.footer {
+		font-size: .7em;
+	}
+
+	.footer_creditos-list {
+		gap: 1em;
+	}
+}
+
+@media screen and (min-width: 43.75em) and (max-width: 50em){
+	.colunas-md {
+		align-items: flex-start;
+	}
+	
+	.article_title,
+	.section_title {
+		font-size: 1.2em;
+	}
+
+	.article_subtitle {
+		font-size: 1em;
+	}
+
+	.content_text,
+	.form-inscreva-se {
+		font-size: .8em;
+	}
+
+	.mulheres-stem_img {
+		width: 30%;
+	}
+
+	.cards-container {
+		width: 80%;
+	}
+
+	.stem_img,
+	.form_img {
+		max-width: 25%;
+	}
+
+	.autora_img {
+		max-width: 28%;
+	}
+
+	.form-inscreva-se {
+		width: 40%;
+	}
+	
+	.footer_creditos-list {
+		gap: 1em;
+	}
+
+}
+
+@media screen and (min-width: 50em) {
+	.card-iniciativa {
+		width: 10rem;
+		height: 10rem;	
+	}
+}

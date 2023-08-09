@@ -1,0 +1,422 @@
+:root {
+	--darkest-shade: #2b2734;
+	--main-color: #765f76;
+	--light-shade: #f7f7f8;
+	--light-accent: #817FA0;
+	--light-accent-p: #c58a97;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--main-color);
+}
+
+ul {
+	list-style-type: none;
+}
+
+.content-bg-light {
+	color: var(--darkest-shade);
+	background-color: var(--light-shade);
+}
+
+.content-bg-dark {
+	color: var(--light-accent-p);
+}
+
+.content-bg-special {
+	background-color: var(--light-accent);
+	color: var(--light-shade);
+}
+
+.colunas {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.coluna {
+	width: 45%;
+	height: auto;
+}
+
+.content_actions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .8rem;
+	margin-top: 1.5rem;
+}
+
+.cta {
+	text-decoration: none;
+	text-align: center;
+	background-color: var(--light-accent-p);
+	color: var(--light-shade);
+	padding: .5em;
+	border-radius: 8px;
+	letter-spacing: .04rem;
+	cursor: pointer;
+}
+
+.cta:hover, .cta:focus {
+	background-color: transparent;
+	color: var(--light-accent-p);
+	outline: 1px solid;
+}
+
+.cta-dark-bg:hover, .cta-dark-bg:focus {
+	background-color: var(--light-shade);
+}
+
+.article, .section {
+	padding: 3rem .8rem;
+}
+
+.article_title, .section_title {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 1.3rem auto 2rem;
+}
+
+.article_subtitle {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.content_text {
+	line-height: 1.5em;
+	margin-bottom: .5rem;
+	padding: 0 1rem;
+}
+
+iframe {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+}
+
+.legenda-video a {
+	color: inherit;
+}
+
+/* Menu */
+.navigation {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	margin: auto;
+	background-color: var(--main-color);
+	z-index: 1;
+	opacity: .98;
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.nav-list li {
+	padding: 1.2rem .4rem;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	font-size: 0.8rem;
+}
+
+.nav-list a {
+	color: var(--light-shade);
+	padding: .6rem .5rem;
+	text-decoration: none;
+	border-radius: 2px;
+	transition: all .2s ease-in-out;
+}
+
+.nav-list a:hover, .nav-list a:focus {
+	background-color: var(--light-accent);
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+/* Header */
+.hero {
+	background-image: url(../img/1pexels-cottonbro-studio-5473956.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 31.25rem;
+	width: 100%;
+	margin-top: .1px;
+}
+
+.hero_content {
+	font-family: Verdana;
+	text-align: center;
+	position: relative;
+	top: 180px;
+}
+
+.hero_title {
+	font-size: 3.2em;
+	color: var(--light-shade);
+	text-transform: uppercase;
+	margin-bottom: 1.5rem;
+	text-shadow: 0 6px 5px var(--darkest-shade);
+}
+
+.hero_subtitle {
+	color: var(--darkest-shade);
+	background-color: var(--light-shade);
+	text-transform: uppercase;
+	width: fit-content;
+	font-size: 1.4em;
+	margin: auto;
+	padding: .3rem;
+}
+
+/* Main */
+.main-container {
+	width: 96%;
+	margin: 3.5rem auto;
+	background-color: var(--darkest-shade);
+	border-radius: 6px;
+	min-height: 100vh;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Article STEM */
+.stem_img {
+	max-width: 20%;
+}
+
+/* Article Mulheres em STEM */
+.mulheres-stem_gallery {
+	gap: 3rem;
+	margin-bottom: 3rem;
+}
+
+.mulheres-stem_img {
+	width: 20%;
+	border-radius: 10px;
+	transition: all .3s;
+}
+
+.mulheres-stem_img:hover {
+	transform: scale(1.2);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);	
+}
+
+.mulheres-stem_details {
+	margin-bottom: .5rem;
+	padding: .4rem;
+	border-bottom: 1px solid var(--light-shade);
+	cursor: pointer;
+	transition: all .5s;
+}
+
+.mulheres-stem_details summary {
+	letter-spacing: .1rem;
+}
+
+.mulheres-stem_details p {
+	margin: .5rem 0;
+}
+
+.mulheres-stem_details:hover {
+	background-color: var(--light-shade);
+	color: #2b2734;
+	transform: scale(1.010);
+}
+
+.mulheres-stem_reference {
+	margin: .4rem;
+	font-size: .8em;
+	color: var(--light-accent);
+}
+
+.mulheres-stem_cta {
+	display: block;
+	margin: .6rem auto 0;
+	width: fit-content;
+}
+
+/* Iniciativas */
+.cards-container {
+	width: 70%;
+	margin: auto;
+}
+
+.card-iniciativa {
+	background-color: transparent;
+	width: 6rem;
+	height: 6rem;
+	perspective: 1000px;
+	border-radius: 8px;
+}
+
+.card_content {
+	position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+}
+
+.card-iniciativa:hover .card_content {
+	transform: rotateY(-180deg);
+}
+
+.card_front, .card_back {
+	position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+	padding: .6rem;
+	border-radius: 8px;
+	background-color: var(--light-shade);
+
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.card_front img {
+	width: 100%;
+	height: auto;
+}
+
+.card_back {
+  color: var(--light-accent-p);
+  transform: rotateY(180deg);
+	gap: 2rem;
+}
+
+.card_back p {
+	text-transform: capitalize;
+}
+
+/* Article Inscreva-se */
+.form-section {
+	justify-content: space-evenly;
+	align-items: flex-start;
+	text-align: center;
+}
+
+.form-inscreva-se {
+	width: 35%;
+	padding: 0 .8rem;
+}
+
+.form_img {
+	max-width: 20%;
+}
+
+.form-inscreva_legend {
+	font-weight: bold;
+	border-bottom: 1px solid;
+	margin-bottom: .8rem;
+	padding-bottom: .5rem;
+}
+
+.form-inscreva_label, 
+.form-inscreva_input {
+	border: none;
+	padding: .3rem;
+}
+
+.form-inscreva_input {
+	margin-bottom: .6rem;
+}
+
+.form-inscreva_label, .form-inscreva_input[type="text"], 
+.form-inscreva_input[type="email"] {
+	display: inline-block;
+	width: 100%;
+	text-align: start;
+	transition: all .1s;
+}
+
+.form-inscreva_input[type="text"], 
+.form-inscreva_input[type="email"] {
+	background-color: var(--light-shade);
+	border: none;
+	border-bottom: 1px solid var(--light-accent);
+}
+
+.form-inscreva_input[type="text"]:focus, .form-inscreva_input[type="email"]:focus {
+	background-color: #c58a9733;
+	outline: none;
+	border-bottom: 2px solid var(--light-accent-p);
+	padding-left: .9rem;
+}
+
+/* Article Sobre */
+.autora_img {
+	border-radius: 50%;
+	width: 20%;
+	max-width: 15%;
+	opacity: 0.6;
+	transition: all .5s;
+}
+
+.autora_img:hover {
+	opacity: 1;
+	transform: rotate(3deg);
+}
+
+#sobre a {
+	color: inherit;
+}
+
+.sobre_actions {
+	justify-content: space-evenly;
+	font-size: 2.2rem;
+}
+
+.sobre_actions a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#sobre a:hover, 
+#sobre a:focus, 
+.sobre_actions a:hover, 
+.sobre_actions a:focus {
+	color: var(--light-shade);
+}
+
+/* Footer */
+.footer {
+	margin-top: 2rem;
+	padding: .8rem;
+	font-size: .9em;
+	background-color: var(--darkest-shade);
+}
+
+.footer a {
+	color: inherit;
+}
+
+.footer li {
+	padding: .2rem;
+}
+
+.footer_copyright {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+	color: var(--light-shade);
+}
