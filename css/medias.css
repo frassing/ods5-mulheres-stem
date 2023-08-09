@@ -1,200 +1,198 @@
-@media screen and (max-width: 37.5em) {
+/* Responsive Menu - max-width: 730px */
+@media screen and (max-width: 45.62em) {
 	.nav-list {
-		justify-content: space-evenly;
-	}
-	
-	.nav-list li {
-		padding: .5rem .2rem;
-		font-size: .6rem;
+		display: none;
 	}
 
-	.hero_title {
-		font-size: 1.8em;
+	.mobile-menu_icon {
+		display: block;
+		text-align: end;
+		padding: .4rem;
 	}
 
-	.hero_subtitle {
-		font-size: 1em;
+	.mobile-menu_icon button {
+		background-color: transparent;
+		border: none;
+		color: var(--light-shade);
+		cursor: pointer;
 	}
 
-	.mulheres-stem_gallery, 
+	.mobile-menu_list a {
+		display: block;
+	}
+
+	.open {
+		display: block;
+	}
+}
+
+/* min-width: 1160px */
+@media screen and (min-width: 72.5em) {
+	.main-container {
+		width: 86vw;
+	}
+	.colunas {
+		align-items: center;
+	}
+
+	.coluna {
+		width: 40vw;
+	}
+
+	.cards-container {
+		width: 60vw;
+	}
+
+	.form-inscreva-se {
+		width: 30%;
+	}
+}
+
+/* max-width: 1000px */
+@media screen and (max-width: 62.5em) {
+	.mulheres-stem_img {
+		width: 35%;
+	}
+
+	.card-iniciativa {
+		width: 8rem;
+		height: 8rem;
+	}	
+}
+
+/* min-width: 825px | max-width: 1000px */
+@media screen and (min-width: 51.56em) and (max-width: 62.5em) {
 	.colunas {
 		gap: 1rem;
 	}
 
-	.coluna,
-	.cards-container {
-		width: 100%;
-	}
-
-	.content-actions {
-		flex-direction: row;
-		font-size: .6em;
-		flex-wrap: nowrap;
-	}
-
-	.article, .section {
-		padding-bottom: 1.5em;
-	}
-	
 	.article_title, .section_title {
-		font-size: 1em;
-		margin-bottom: 1em;
+		font-size: 1.3em;
+	}
+
+	.mulheres-stem_gallery {
+		justify-content: space-around;
+	}
+
+	.form_img {
+		max-width: 30%;
+	}
+
+	.sobre_actions {
+		font-size: 1.8rem;
+	}
+
+}
+
+/* Tamanhos Texto - max-width: 825px */
+@media screen and (max-width: 51.56em) {
+	.article_title, .section_title {
+		font-size: 1.3em;
 	}
 
 	.article_subtitle {
-		font-size: .8em;
-		margin-bottom: 1em;
+		font-size: 1em;
 	}
 
-	.content_text,
-	.form-inscreva-se {
-		font-size: .8em;
-	}
-
-	.mulheres-stem_details {
+	.content_text {
 		font-size: .9em;
-	}
-
-	.mulheres-stem_img {
-		width: 45%;
-	}
-
-	.form-inscreva-se {
-		padding: 0 .5rem;
-	}
-
-	.stem_img,
-	.form_img {
-		max-width: 40%;
-	}
-
-	.autora_img {
-		max-width: 28%;
-	}
-
-	.footer {
-		font-size: .7em;
-	}
-
-	.footer_creditos-list,
-	.footer_copyright {
-		display: block;
-		text-align: center;
 	}
 }
 
-@media screen and (min-width: 37.5em) and (max-width: 43.75em) {
-	.nav-list li {
-		padding: .8rem .3rem;
-	}
-	
-	.hero_title {
-		font-size: 2em;
-	}
-
-	.hero_subtitle {
-		font-size: 1.2em;
-	}
-	
-	.article_title,
-	.section_title {
-		font-size: 1.2em;
-	}
-
-	.article_subtitle {
-		padding: 0 2rem;
-	}
-
+/* min-width: 640px | max-width: 825px */
+@media screen and (min-width: 40em) and (max-width: 51.56em) {
 	.colunas-md {
 		flex-direction: column;
-	}
-	
-	.coluna-md,
-	.cards-container {
-		width: 80%;
+		align-items: center;
 	}
 
-	.content_text,
-	.form-inscreva-se {
-		font-size: .8em;
+	.coluna-md {
+		width: 80vw;
+	}
+
+	.mulheres-stem_gallery {
+		justify-content: space-around;
+	}
+
+	.cards-container {
+		width: 75vw;
+	}
+
+	.card-iniciativa {
+		width: 	6.3rem;
+		height: 6.3rem;
 	}
 
 	.form-inscreva-se {
 		width: 45%;
-		padding: 0;
+		font-size: .8em;
+	}
+
+	.stem_img {
+		max-width: 25%;
+	}
+
+	.form_img {
+		max-width: 30%;
+	}
+
+	.autora_img {
+		max-width: 18%;
+	}
+
+	.footer_creditos-list {
+		flex-direction: column;
+		gap: .2em;
+		align-items: center;
+	}
+}
+
+/* max-width: 640px*/
+@media screen and (max-width: 40em) {
+	.hero_title {
+		font-size: 2.8em;
+	}
+
+	.colunas {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.coluna {
+		width: 90vw;
+	}
+
+	.article_subtitle {
+		margin-bottom: 1em;
+	}
+
+	.stem_img {
+		max-width: 30%;
 	}
 
 	.mulheres-stem_img {
-		width: 30%;
+		width: 65%;
 	}
 
-	.stem_img,
+	.cards-container {
+		flex-direction: row;
+		width: 85vw;
+	}
+
 	.form_img {
 		max-width: 35%;
 	}
 
 	.autora_img {
-		max-width: 28%;
-	}
-	
-	.footer {
-		font-size: .7em;
+		max-width: 20%;
 	}
 
 	.footer_creditos-list {
-		gap: 1em;
-	}
-}
-
-@media screen and (min-width: 43.75em) and (max-width: 50em){
-	.colunas-md {
-		align-items: flex-start;
-	}
-	
-	.article_title,
-	.section_title {
-		font-size: 1.2em;
+		gap: .5rem;
 	}
 
-	.article_subtitle {
-		font-size: 1em;
-	}
-
-	.content_text,
-	.form-inscreva-se {
-		font-size: .8em;
-	}
-
-	.mulheres-stem_img {
-		width: 30%;
-	}
-
-	.cards-container {
-		width: 80%;
-	}
-
-	.stem_img,
-	.form_img {
-		max-width: 25%;
-	}
-
-	.autora_img {
-		max-width: 28%;
-	}
-
-	.form-inscreva-se {
-		width: 40%;
-	}
-	
-	.footer_creditos-list {
-		gap: 1em;
-	}
-
-}
-
-@media screen and (min-width: 50em) {
-	.card-iniciativa {
-		width: 10rem;
-		height: 10rem;	
+	.footer_copyright {
+		flex-direction: column;
+		align-items: center;
 	}
 }

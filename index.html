@@ -4,6 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="./img/favicon_io/site.webmanifest">
+
 	<title>Mulheres em STEM</title>
 
 	<!-- Font Roboto -->
@@ -11,16 +18,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/medias.css">
 </head>
 
 <body>
-
+	<!-- NAV STICKY -->
 	<nav class="navigation">
-		<ul class="nav-list">
+		<ul class="nav-list menu-list">
 			<li><a href="#inicio">Início</a></li>
 			<li><a href="#stem">STEM</a></li>
 			<li><a href="#ods5">ODS 5</a></li>
@@ -29,7 +36,23 @@
 			<li><a href="#inscreva">Inscreva-se</a></li>
 			<li><a href="#sobre">Sobre</a></li>
 		</ul>
+
+		<div class="mobile-menu_icon">
+			<button onclick="menuOpen()"><i class="fa-solid fa-bars menu-icon"></i></button>
+		</div>
 	</nav>
+
+	<div class="mobile-menu">
+		<ul class="mobile-menu_list menu-list">
+			<li><a href="#inicio">Início</a></li>
+			<li><a href="#stem">STEM</a></li>
+			<li><a href="#ods5">ODS 5</a></li>
+			<li><a href="#mulheresstem">Mulheres em Stem</a></li>
+			<li><a href="#iniciativas">Iniciativas</a></li>
+			<li><a href="#inscreva">Inscreva-se</a></li>
+			<li><a href="#sobre">Sobre</a></li>
+		</ul>
+	</div>
 
 	<header class="hero" id="inicio">
 		<div class="hero_content">
@@ -60,8 +83,8 @@
 
 			<div class="colunas colunas-md">
 				<div class="coluna coluna-md">
-					<iframe src="https://www.youtube.com/embed/vGx2TXYrEFs"
-						title="MAPFRE - ODS 5: Igualdade de gênero" frameborder="0"
+					<iframe src="https://www.youtube.com/embed/vGx2TXYrEFs" title="MAPFRE - ODS 5: Igualdade de gênero"
+						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 						allowfullscreen></iframe>
 					<p class="legenda-video">Fonte: <a href="https://www.youtube.com/embed/vGx2TXYrEFs" target="_blank">MAPFRE</a>
@@ -80,8 +103,7 @@
 					</p>
 
 					<div class="content_actions">
-						<a class="cta"
-							href="https://brasil.un.org/pt-br/91863-agenda-2030-para-o-desenvolvimento-sustent%C3%A1vel"
+						<a class="cta" href="https://brasil.un.org/pt-br/91863-agenda-2030-para-o-desenvolvimento-sustent%C3%A1vel"
 							target="_blank">Agenda</a>
 						<a class="cta" href="https://brasil.un.org/pt-br/sdgs/5" target="_blank">ODS 5</a>
 						<a class="cta" href="https://brasil.un.org/pt-br/sdgs" target="_blank">Outras ODS's</a>
@@ -201,7 +223,8 @@
 				<div class="card-iniciativa">
 					<div class="card_content">
 						<div class="card_front">
-							<img src="https://cdn-images-1.medium.com/v2/1*hSoF0ywCWx-uxaGXqgterQ.jpeg" alt="logo ux para minas pretas">
+							<img src="https://cdn-images-1.medium.com/v2/1*hSoF0ywCWx-uxaGXqgterQ.jpeg"
+								alt="logo ux para minas pretas">
 
 						</div>
 
@@ -229,7 +252,8 @@
 				<div class="card-iniciativa">
 					<div class="card_content">
 						<div class="card_front">
-							<img src="https://minasprogramam.com/wp-content/uploads/2015/07/LOGO_MINAS_PROG.png" alt="logo minas programam">
+							<img src="https://minasprogramam.com/wp-content/uploads/2015/07/LOGO_MINAS_PROG.png"
+								alt="logo minas programam">
 
 						</div>
 
@@ -243,7 +267,8 @@
 				<div class="card-iniciativa">
 					<div class="card_content">
 						<div class="card_front">
-							<img src="https://d1fdloi71mui9q.cloudfront.net/f2mquHoUQpCxX3YTkZW9_ehNhmsJI5n58sWc7" alt="logo preta lab">
+							<img src="https://d1fdloi71mui9q.cloudfront.net/f2mquHoUQpCxX3YTkZW9_ehNhmsJI5n58sWc7"
+								alt="logo preta lab">
 
 						</div>
 
@@ -285,13 +310,16 @@
 				<div class="card-iniciativa">
 					<div class="card_content">
 						<div class="card_front">
-							<img src="https://media.licdn.com/dms/image/D4D22AQF2hhy0X103eg/feedshare-shrink_800/0/1689038397911?e=1694044800&v=beta&t=SvXmQUxI4f_BTJSqStaWezWWI_HOuE9yfO5KVDWGKig" alt="logo Bea deva">
+							<img
+								src="https://media.licdn.com/dms/image/D4D22AQF2hhy0X103eg/feedshare-shrink_800/0/1689038397911?e=1694044800&v=beta&t=SvXmQUxI4f_BTJSqStaWezWWI_HOuE9yfO5KVDWGKig"
+								alt="logo Bea deva">
 
 						</div>
 
 						<div class="card_back">
 							<p>Bea deva</p>
-							<a href="https://www.linkedin.com/posts/julia-alves998_tech-tecnologia-mercadodetrabalho-activity-7084340514547728384-VC-H" target="_blank" class="cta">Conheça aqui</a>
+							<a href="https://www.linkedin.com/posts/julia-alves998_tech-tecnologia-mercadodetrabalho-activity-7084340514547728384-VC-H"
+								target="_blank" class="cta">Conheça aqui</a>
 						</div>
 					</div>
 				</div>
@@ -304,23 +332,23 @@
 			<div class="form-section colunas">
 				<form action="#" method="get" class="form-inscreva-se coluna">
 					<legend class="form-inscreva_legend">Seja informado de novas iniciativas, assine a newsletter</legend>
-					
-						<label for="nome" class="form-inscreva_label">Nome</label>
-						<input type="text" name="nome" id="nome" placeholder="Digite seu nome" required class="form-inscreva_input">
-						
-						<label for="email" class="form-inscreva_label">E-mail</label>
-						<input type="email" name="email" id="email" placeholder="seuemail@email.com" required class="form-inscreva_input">
-						
-						<label class="form-inscreva_label">
-							<input type="checkbox" name="aceito" value="true" required class="form-inscreva_input"> 
-							Aceito receber informações e notícias no e-mail informado
-						</label>
-			
-						<input type="submit" value="Assinar newsletter" class="cta form-cta form-inscreva_input">
+
+					<label for="nome" class="form-inscreva_label">Nome</label>
+					<input type="text" name="nome" id="nome" placeholder="Digite seu nome" required class="form-inscreva_input">
+
+					<label for="email" class="form-inscreva_label">E-mail</label>
+					<input type="email" name="email" id="email" placeholder="seuemail@email.com" required
+						class="form-inscreva_input">
+
+					<label class="form-inscreva_label">
+						<input type="checkbox" name="aceito" value="true" required class="form-inscreva_input">
+						Aceito receber informações e notícias no e-mail informado
+					</label>
+
+					<input type="submit" value="Assinar newsletter" class="cta form-cta form-inscreva_input">
 				</form>
 
-				<img class="form_img coluna" src="./img/Emails-amico.svg"
-					alt="laptop aberto com vários emails na tela">
+				<img class="form_img coluna" src="./img/Emails-amico.svg" alt="laptop aberto com vários emails na tela">
 			</div>
 		</section>
 
@@ -333,12 +361,15 @@
 				<div class="content_text coluna">
 					<p>
 						Olá, sou a Raquel Roessing, estudante do projeto de Desenvolvimento Web da JA Brasil: ElasNaTech 2023,
-						instruída pela profª <a href="https://www.linkedin.com/in/julianaribeirof" target="_blank">Juliana Ribeiro</a> e pelas monitoras: <a href="https://www.linkedin.com/in/erika-a-s-silva-frontend" target="_blank">Erika Silva</a> e <a href="https://www.linkedin.com/in/vanessa-mainara" target="_blank">Vanessa Mainara</a>.
+						instruída pela profª <a href="https://www.linkedin.com/in/julianaribeirof" target="_blank">Juliana
+							Ribeiro</a> e pelas monitoras: <a href="https://www.linkedin.com/in/erika-a-s-silva-frontend"
+							target="_blank">Erika Silva</a> e <a href="https://www.linkedin.com/in/vanessa-mainara"
+							target="_blank">Vanessa Mainara</a>.
 					</p>
 
 					<div class="content_actions sobre_actions">
-						<a href="https://github.com/frassing"><i class="fa fa-github"></i></a>
-						<a href="https://www.linkedin.com/in/raquel-frassing/"><i class="fa fa-linkedin"></i></a>
+						<a href="https://github.com/frassing"><i class="fa-brands fa-square-github"></i></a>
+						<a href="https://www.linkedin.com/in/raquel-frassing/"><i class="fa-brands fa-linkedin"></i></a>
 					</div>
 				</div>
 			</div>
@@ -346,34 +377,44 @@
 	</main>
 
 	<footer class="footer content-bg-dark">
-				<ul class="footer_creditos-list colunas">
-					<li>
-						Foto de cottonbro studio no <a href="https://www.pexels.com/pt-br/foto/ia-inteligencia-artificial-codigo-senha-5473956/" target="_blank">Pexels</a>
-					</li>
+		<ul class="footer_creditos-list colunas">
+			<li>
+				Foto de cottonbro studio no <a
+					href="https://www.pexels.com/pt-br/foto/ia-inteligencia-artificial-codigo-senha-5473956/"
+					target="_blank">Pexels</a>
+			</li>
 
-					<li>
-						Technology illustrations by <a href="https://storyset.com/illustration/virtual-reality/cuate" target="_blank">Storyset</a>
-					</li>
+			<li>
+				Technology illustrations by <a href="https://storyset.com/illustration/virtual-reality/cuate"
+					target="_blank">Storyset</a>
+			</li>
 
-					<li>
-						<a href="https://www.weforum.org/reports/global-gender-gap-report-2023">Global Gender Report 2023</a>
-					</li>
+			<li>
+				<a href="https://www.weforum.org/reports/global-gender-gap-report-2023">Global Gender Report 2023</a>
+			</li>
 
-					<li>
-						Relatório UNESCO <a href="https://www.britishcouncil.org.br/mulheres-na-ciencia/relatorio-unesco-america-latina">Mulheres em STEM na A.L.</a>
-					</li>
+			<li>
+				Relatório UNESCO <a
+					href="https://www.britishcouncil.org.br/mulheres-na-ciencia/relatorio-unesco-america-latina">Mulheres em STEM
+					na A.L.</a>
+			</li>
 
-					<li>
-						Internet illustrations by <a href="https://storyset.com/illustration/emails/amico">Storyset</a>
-					</li>
-				</ul>
+			<li>
+				Internet illustrations by <a href="https://storyset.com/illustration/emails/amico">Storyset</a>
+			</li>
 
-				<div class="footer_copyright">
-					<p>Copyright &copy; 2023 todos os direitos reservados</p>
-					<p>Desenvolvido por Raquel Roessing</p>
-				</div>
+			<li>
+				Favicon gerado em <a href="https://favicon.io/">favicon.io</a>
+			</li>
+		</ul>
 
+		<div class="footer_copyright">
+			<p>Copyright &copy; 2023 todos os direitos reservados</p>
+			<p>Desenvolvido por Raquel Roessing</p>
+		</div>
 	</footer>
+
+	<script src="./javascipt/script.js"></script>
 </body>
 
 </html>
