@@ -110,7 +110,7 @@ iframe {
 
 /* Menu */
 .navigation {
-	position: sticky;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	margin: auto;
@@ -157,8 +157,9 @@ iframe {
 
 .mobile-menu {
 	position: fixed;
-	top: auto;
+	top: 38px;
 	right: 0;
+	left: 0;
 	background-color: var(--main-color);
 	z-index: 1;
 }
@@ -169,13 +170,14 @@ iframe {
 
 .mobile-menu_list li {
 	text-align: center;
+	padding: 0 .4em;
 } 
 
 .mobile-menu_list a {
 	text-transform: uppercase;
 	color: var(--light-shade);
 	text-decoration: none;
-	padding: .6rem .9rem;
+	padding: .6rem .5rem;
 	font-size: .8rem;
 }
 
@@ -439,20 +441,19 @@ iframe {
 }
 
 .footer_creditos-list {
-	gap: 1em;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	gap: .1em;
 }
 
 .footer a {
 	color: inherit;
 }
 
-.footer li {
-	padding: .2rem;
-}
-
 .footer_copyright {
 	display: flex;
-	gap: 1rem;
+	gap: .7rem;
 	justify-content: space-evenly;
 	margin-top: 2rem;
 	color: var(--light-shade);

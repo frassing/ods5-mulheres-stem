@@ -123,6 +123,10 @@
 		height: 6.3rem;
 	}
 
+	.card_back {
+		gap: .5em;
+	}
+
 	.form-inscreva-se {
 		width: 45%;
 		font-size: .8em;
@@ -139,11 +143,11 @@
 	.autora_img {
 		max-width: 18%;
 	}
+}
 
+@media screen and (min-width: 620px) {
 	.footer_creditos-list {
-		flex-direction: column;
-		gap: .2em;
-		align-items: center;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
@@ -185,10 +189,6 @@
 
 	.autora_img {
 		max-width: 20%;
-	}
-
-	.footer_creditos-list {
-		gap: .5rem;
 	}
 
 	.footer_copyright {
